@@ -4,7 +4,6 @@ import React,{useEffect,useRef,useState} from "react";
 import Todo from './components/Todo';
 import Form from './components/Form';
 import FilterButton from './components/FilterButton';
-import Lame from './components/lame';
 import { nanoid } from "nanoid";
 
 function usePrevious(value) {
@@ -62,9 +61,7 @@ useEffect(() => {
   const tasksNoun = taskList.length !== 1 ? 'tasks' : 'task';
   const headingText = `${taskList.length} ${tasksNoun} remaining`;
 
-  function lamer(){
-    alert("hey");
-  }
+ 
 
   function addTask(name, id) {
     const newTask = {id: id, name: name, completed: false};
